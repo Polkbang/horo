@@ -7,14 +7,17 @@
     function setFirst() {
         setCard();
         document.getElementById("img1").src = "./images/"+randomNum+'.png';
+        document.querySelector('#btn1').disabled = true;
     }   
     function setSecond() {
         setCard();
         document.getElementById("img2").src = "./images/"+randomNum+'.png';
+        document.querySelector('#btn2').disabled = true;
     }
     function setThird() {
         setCard();
         document.getElementById("img3").src = "./images/"+randomNum+'.png';
+        document.querySelector('#btn3').disabled = true;
     }
     function setCard() {
         randomNum = Math.floor(Math.random() * 53)
@@ -36,9 +39,9 @@
         <span class="3rd"><img src="http://placehold.it/200x320" id="img3"/></span>
     </div>
     <div>
-        <button type="button" onclick="setFirst();">select 1st card</button>
-        <button type="button" onclick="setSecond();">select 2nd card</button>
-        <button type="button" onclick="setThird();">select 3nd card</button>
+        <button type="button" onclick="setFirst();" id="btn1">select 1st card</button>
+        <button type="button" onclick="setSecond();" id="btn2">select 2nd card</button>
+        <button type="button" onclick="setThird();" id="btn3">select 3nd card</button>
         <button type="button" onclick="location.reload();">clear all!</button>
     </div>
 </html>
