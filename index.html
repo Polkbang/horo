@@ -20,9 +20,9 @@
         document.querySelector('#btn3').disabled = true;
     }
     function setCard() {
-        randomNum = Math.floor(Math.random() * 53)
+        randomNum = Math.ceil(Math.random() * 52)
             for (i=0; i<1; i++) {
-            randomNum = Math.floor(Math.random() * 53)
+            randomNum = Math.ceil(Math.random() * 52)
             if (randomIndexArray.indexOf(randomNum) === -1) {
                 randomIndexArray.push(randomNum)
             } else {
